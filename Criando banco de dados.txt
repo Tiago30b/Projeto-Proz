@@ -1,0 +1,8 @@
+CREATE DATABASE ESCOLA;
+
+CREATE TABLE aluno (
+  id SERIAL PRIMARY KEY,
+  nome VARCHAR (50),
+  email VARCHAR (50),
+  endereco VARCHAR (35)
+  )
