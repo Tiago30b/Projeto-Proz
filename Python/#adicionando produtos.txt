@@ -1,0 +1,11 @@
+#adicionando produtos
+
+lista_produtos = ['máscaras faciais', 'batons', 'esmaltes', 'perfumes', 'loções', 'xampus', 'sabonetes', 'delineadores'] 
+
+list
+print(len(lista_produtos))
+
+lista_produtos.append("delineador")
+lista_produtos.append("blush")
+
+print(len(lista_produtos))

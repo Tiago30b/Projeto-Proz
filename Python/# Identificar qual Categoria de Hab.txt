@@ -1,0 +1,14 @@
+# Identificar qual Categoria de Habilitação é necessaria ter
+
+qntd_rodas = 4
+peso_kg = 1500
+qntd_pessoas = 4
+
+if qntd_rodas <= 2 and qntd_pessoas <= 2 :
+  print("Categoria A")
+elif qntd_rodas == 4 and qntd_pessoas <= 8 and peso_kg <= 3500 :
+  print("Categoria B")
+elif qntd_rodas >= 4 and peso_kg <=6000 :
+  print("Categoria C")
+else :
+  print("Categoria D") 

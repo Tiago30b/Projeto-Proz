@@ -1,0 +1,7 @@
+#Alocar valores dentro da array
+
+produto = ["Camiseta", "Calça", "Tênis", "Bermuda", "Meia"]
+idade = [1995, 1582, 1969, 1994, 2009]
+
+print(produto)
+print(idade)

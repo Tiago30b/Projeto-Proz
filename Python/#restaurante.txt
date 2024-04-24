@@ -1,0 +1,13 @@
+#restauran
+qnt_pessoas = (int(input("Informe a quantidade de Pessoas: ")))
+
+cigarro = input("Possui algum fumante? ")
+
+pet = input("Possui algum animal de estimação? ")
+              
+if cigarro == "Sim" or pet == "Sim":
+  print("Para a melhor comodação separamos uma mesa na área externa do Restaurante")
+elif qnt_pessoas >= 5 :
+  print("Para a melhor comodação separamos uma mesa no 1º andar do Restaurante")
+else :
+  print("Para a melhor comodação separamos uma mesa no salão térreo do Restaurante") 

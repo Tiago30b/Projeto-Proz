@@ -1,4 +1,28 @@
-Olá mundo
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <h1> Conexão com um arquivo JavaScript </h1>
 
-testando funções do Git hub
+    </script>
+    </body>
+    </html>
 
+==============================================================================
+
+JAVASCRIPT
+
+function conexao() 
+{
+    for (i = 0; i <3; i++)
+    {
+        console.log("Conexão com sucesso!");
+    }
+}
+
+console.log(conexao());

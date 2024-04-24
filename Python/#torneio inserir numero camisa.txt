@@ -1,0 +1,8 @@
+#torneio inserir numero camisa
+
+time = input("Informe o nome do Time: ")
+contador = 0
+
+while contador <5 :
+  print(time, contador + 1)
+  contador = contador + 1

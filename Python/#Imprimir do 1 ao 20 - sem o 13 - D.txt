@@ -1,0 +1,11 @@
+#Imprimir do 1 ao 20 - sem o 13 - Decrescente
+
+i = 20
+
+while (i > 0) :
+
+  if i == 13 :
+    i = i-1
+  else :
+    print(i,"º Andar")
+    i= i-1

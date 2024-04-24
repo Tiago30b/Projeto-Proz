@@ -1,0 +1,21 @@
+# Informar a idade que irá fazer em 2024
+import datetime
+
+cont = False
+
+while (cont == False):
+
+  try:
+    
+    nome = input("Informe seu Nome Completo ")
+    idade_atual = int(input("Informe seu ano de Nascimento de 1922 a 2024 "))
+
+    if nome.isdigit() == False and 1922 <= idade_atual <= 2024 :
+      idade_fut = datetime.datetime.now().year - idade_atual
+      print(nome, "este ano você fará", idade_fut, "anos.")
+      cont = True
+    else:
+      print("Dados Invalidos")
+
+  except:
+    print("Erro") 
