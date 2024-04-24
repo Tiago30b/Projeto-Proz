@@ -1,0 +1,21 @@
+Conforme o ranking DB-Engines que é atualizado mensalmente coloca no topo os SGBDs mais utilizados. Em 1º lugar ORACLE seguido pelo MySQL.
+
+O Oracle Database, desenvolvido pela Oracle Corporation, é um dos sistemas de gerenciamento de banco de dados relacionais mais poderosos e populares do mundo.
+Ele oferece uma ampla gama de recursos avançados para armazenamento, manipulação e gerenciamento de grandes volumes de dados em ambientes corporativos.
+Suas Características principais são:
+Suporte para transações ACID (Atomicidade, Consistência, Isolamento e Durabilidade);
+Recursos avançados de segurança, incluindo criptografia de dados, controle de acesso e auditoria;
+Escalabilidade e desempenho otimizados para cargas de trabalho de alta demanda;
+Suporte para linguagens de programação como SQL, PL/SQL e Java;
+Capacidade de lidar com grandes volumes de dados estruturados e não estruturados.
+
+O MySQL é um sistema de gerenciamento de banco de dados relacional de código aberto amplamente utilizado, especialmente em pequenas e médias empresas, bem como em aplicações web. 
+Uma das maiores vantagens do MySQL é sua simplicidade e facilidade de uso. Ele é conhecido por sua interface simples e intuitiva, facilitando a configuração e administração do banco de dados, especialmente para desenvolvedores iniciantes.
+Suas características principais são:
+Facilidade de uso e configuração;
+Eficiência e desempenho para cargas de trabalho de tamanho médio;
+Suporte para várias plataformas, incluindo Windows, Linux e macOS;
+Compatibilidade com uma ampla gama de linguagens de programação, incluindo PHP, Python e java;
+Escalabilidade, permitindo que os usuários cresçam de pequenas aplicações para grandes sistemas com milhões de registros;
+Suporte para replicação e clustering para alta disponibilidade e tolerância a falhas;
+O MySQL é frequentemente utilizado em aplicações web, como blogs, fóruns, lojas online, sistemas de gerenciamento de conteúdo (CMS) e outras aplicações que exigem um banco de dados robusto, eficiente e de fácil acesso.
