@@ -1,0 +1,39 @@
+#Calculadora simples
+
+def calc (n1, n2, opt):
+
+            if (opt == 1) : total =  n1 + n2
+    
+            elif (opt == 2) : total = n1 - n2
+
+            elif (opt == 3) : total = n1 * n2
+ 
+            elif (opt == 4) : total = n1 / n2
+
+            elif (opt == 0) : return "Calculadora Encerrada"
+
+            else : return "Operação não cadastrada"
+
+            print("Resultado", total)
+
+
+chave = True
+
+while chave == True :
+
+  print("Informe o Tipo de operação")
+  opt = int(input())
+
+  print("Informe o 1º Valor")
+  n1 = float(input())
+
+  print("Informe o 2º Valor")
+  n2 = float(input())
+
+  if opt == 0 :
+    print("Calculadora Encerrada")
+    chave = False
+  else :
+    test = calc(n1, n2, opt)
+
+print("Resultado:", test)
