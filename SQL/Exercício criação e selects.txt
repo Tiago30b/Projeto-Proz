@@ -1,0 +1,91 @@
+CREATE TABLE aluno (
+  matricula SERIAL PRIMARY KEY,
+  nome VARCHAR (10),
+  sobrenome VARCHAR (10),
+  serie int,
+  nota int
+  )
+  
+   INSERT INTO aluno (nome, sobrenome, serie) VALUES
+   ('Vitória','Claudino',2),
+   ('Luiz','Silva',1),
+   ('André','Carvalho',3),
+   ('Alan','Villa',1),
+   ('Figueiredo','Santos',2)
+   
+  CREATE TABLE professor (
+    id_p SERIAL PRIMARY KEY,
+    nome varchar (10),
+    Sobrenome varchar (10)
+   )
+    
+    INSERT INTO professor (nome, sobrenome) VALUES
+   ('Math', 'mática'),
+   ('Port','gues'),
+   ('hist','toria'),
+   ('ing','gles'),
+   ('Geo','Grafia')
+   
+   
+    CREATE TABLE disciplina (
+      id SERIAL PRIMARY KEY,
+      disciplina varchar (15),
+      serie INT,
+      id_prof INT,
+      CONSTRAINT fk_professor FOREIGN KEY (id_prof) REFERENCES professor(id_p)
+   ) 
+   
+      INSERT INTO disciplina (disciplina, serie, id_prof) VALUES
+   ('Matematica',1,1),
+   ('Historia',2,3),
+   ('Geografia',3,5),
+   ('Português',2,2),
+   ('Ingles',1,4)
+   
+   
+    CREATE TABLE boletim (
+      id_b SERIAL PRIMARY KEY,
+      matricula int,
+      CONSTRAINT fk_matricula FOREIGN KEY (matricula) REFERENCES aluno(matricula),
+      disciplina VARCHAR (15),
+      nota INT
+     )
+          
+        INSERT INTO boletim (matricula, disciplina, nota) VALUES
+   (1,'Matemática', 10),
+   (2,'Português', 4),
+   (1,'Português', 7),
+   (3,'Inglês', 3),
+   (5,'História', 5)
+      
+
+'- Mostre as informações apenas dos alunos aprovados. A aprovação é acima de 7,0;'
+SELECT * from aluno
+JOIN boletim
+on boletim.matricula = aluno.matricula and boletim.nota > 7
+
+'- Exiba as informações dos alunos do primeiro ano com nota maior ou igual a 8,0;'
+SELECT * FROM aluno
+	JOIN boletim
+	ON boletim.matricula = aluno.matricula AND aluno.serie = 1 and boletim.nota >= 8
+
+'- Exiba apenas os nomes e as notas dos alunos;'
+SELECT aluno.nome, boletim.nota FROM aluno
+	JOIN boletim
+	ON boletim.matricula = aluno.matricula
+    
+'- Crie uma tabela PROFESSOR que apresente apenas o primeiro e o último nome do professor;'
+SELECT * FROm professor
+
+'- Crie uma tabela ALUNO com o primeiro e o último nome de cada;'
+SELECT nome, sobrenome FROM aluno
+
+'- Mostre o resultado da união entre a tabela ALUNO(PNome, UNome) e a tabela PROFESSOR;'
+SELECT nome, sobrenome FROM aluno 
+UNION
+SELECT nome, sobrenome from professor
+
+'- Exiba o resultado da intersecção entre a tabela ALUNO(PNome, UNome) e a tabela PROFESSOR;'
+'Não existe relação entre as tabelas'
+
+'- Exiba o resultado da diferença entre a tabela ALUNO(PNome, UNome) e a tabela PROFESSOR. '
